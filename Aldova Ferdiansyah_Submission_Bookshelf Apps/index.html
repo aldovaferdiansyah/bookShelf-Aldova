@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf Apps</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Bookshelf Apps</h1>
+  </header>
+  <div class="wrapper">
+    <div class="container bg-white shadow" id="add-book">
+      <h2 class="container-header text-center">DAFTAR KEGIATAN LITERASI PEMBACAAN BUKU</h2>
+      <form class="form" action="#" id="form">
+        <div class="form-group form-title">
+          <label for="title">Judul Buku</label>
+          <input type="text" id="title" name="title" placeholder="Silahkan Masukkan Judul Buku ..." required>
+        </div>
+        <div class="form-group form-title">
+          <label for="author">Nama Penulis Buku</label>
+          <input type="text" id="author" name="author" placeholder="Silahkan Masukkan Nama Penulis Buku ..." required>
+        </div>
+        <div class="form-group form-title">
+          <label for="tahun">Tahun Rilis Buku</label>
+          <input type="text" id="tahun" name="tahun" placeholder="Silahkan Masukkan Tahun Rilis Buku ..." required>
+        </div>
+        <input type="submit" value="Submit" name="Submit" class="btn-submit">
+      </form>
+    </div>
+    <div class="container bg-white shadow">
+      <div class="search-box">
+        <h2 class="container-header">
+          <center>Form Pencarian Buku</center>
+        </h2>
+        <form id="search-form">
+          <input id="searchInput" class="search-text" type="text"
+            placeholder="Silahkan Masukkan Judul Buku Yang Dicari ...">
+          <button id="searchSubmit" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="list-books">
+      </div>
+    </div>
+    <div class="container bg-white shadow">
+      <h2 class="container-header">Belum selesai dibaca</h2>
+      <div class="list-books" id="books">
+      </div>
+    </div>
+    <div class="container bg-white shadow">
+      <h2 class="container-header">Selesai dibaca</h2>
+      <div class="list-books" id="completed-books">
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Bookshelf Apps &#169; 2024, Aldova Ferdiansyah. MSIB Dicoding Bacth 6</p>
+  </footer>
+  <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
